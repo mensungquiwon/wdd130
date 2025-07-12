@@ -11,16 +11,19 @@ h1 {
     color: darkblue;
 }
 main img {
-    width: 150px;
+    max-width: ;width: 150px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
-p {
-    padding: 0px;
 
+p {
+    padding: 0;
 }
+
+
+
 aside {
     width: 20rem;
     background-color: #eee;
@@ -30,10 +33,10 @@ aside {
     color: #333;
     text-align: center;
 
-    img {
-        width: 200px;
-        height: auto;
-    }
+img {
+    width: 200px;
+    height: auto;
+}
 
 }
 
