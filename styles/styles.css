@@ -8,7 +8,7 @@ nav a {
     padding: 20px;
 }
 main {
-    max-width: 400px;
+    max-width: 100%;
 }
 h1 {
     color: darkblue;
