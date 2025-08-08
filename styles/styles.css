@@ -5,25 +5,50 @@
     --height-size: auto;
 }
 
-
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
 
 
 nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    align-items: center;
+    align-content: center;
     background-color: var(--heading-bg-color);
-    padding: var(--padding-size);
 }
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    text-decoration: none;
+    padding: 0.5rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+
 }
-main {
-    max-width: 100%;
+.grid {
+    display: grid;
+    align-items: center;
 }
+main{
+    grid-column: 2/3;
+    margin: 1rem;
+}
+aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2
+}
+
+
 h1 {
     color: var(--heading-bg-color);
-    
+    border: bottom;   
 }
+
 main img {
     max-width: 150px;
     height: var(--height-size);

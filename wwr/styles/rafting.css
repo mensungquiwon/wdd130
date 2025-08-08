@@ -7,16 +7,33 @@
 --body-font: "Marmelad", sans-serif;
 }
 
-header {
+.header {
+    display: grid;
+    grid-template-columns: auto 1fr ;
+    align-items: center;
+    border: 1px solid lightyellow;
     background-color: var(--primary-color); /*forest green8*/
-    color: var(--accent-color2);   
+    color: var(--accent-color2);
+    padding: 1rem 2rem; 
+}
+.logo img{
+    height: 60px;
 }
 
-* {
+*{ 
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
+    box-sizing: border-box; 
+
+ } 
+
+ nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    text-decoration: none;
+    padding: 20px;
+ }
 
 body {
     font-family: var(--body-font);
@@ -26,12 +43,16 @@ body {
 header, main, footer {
     width: 840px;
     margin: 0 auto;
+} 
 
-}
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 
+}
+section{
+    display: flex;
+    
 }
 nav, p, section, article {
     margin: 16px;
@@ -43,13 +64,15 @@ nav, p, section, article {
 }
 
 .hero {
-    position: relative;
+    display: grid;
+    justify-content: center;
     width: 100%;
 }
 .hero img {
-    display: block;
+    display: grid;
     width: 100%;
     height: auto;
+
 }
 h1 {
     position: absolute;
@@ -67,9 +90,7 @@ h1 {
     position: absolute;
     width: 100%; 
     align-items: center;
-    box-sizing: border-box;
-
-    
+    box-sizing: border-box;  
     background-color: var(--accent-color2);
     opacity: 0.9;
     top: 14%;
