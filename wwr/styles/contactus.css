@@ -1,0 +1,121 @@
+:root {
+--primary-color: #4f9a15; /*forest green8*/
+--secondary-color:  #051338; /*dark blue*/
+--accent-color1: #00272b; /*dark cyan*/
+--accent-color2: #450b0b; /*dark red*/
+--heading-font:  "Roboto", sans-serif;
+--body-font: "Marmelad", sans-serif;
+}
+
+header {
+    display: flex;
+    grid-template-columns: 150px auto;
+    align-items: center;
+    border: 1px solid lightyellow;
+    background-color: var(--secondary-color); /*dark blue*/
+    color: var(--accent-color2);
+}
+header, nav a {
+    color: #fff;
+    text-decoration: none;
+     border: 1px solid #fff;
+    padding: 7px;
+    border-radius: 5px;
+}
+ nav {
+    justify-content: space-between;
+    text-decoration: none;
+    align-items: center;
+ }
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+} 
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: #000;
+
+}
+h2{
+    text-align: center;
+    padding: 10px;
+}
+article{
+    text-align: center;
+    text-decoration: solid;
+    font-weight: bold;
+    margin: 0px;
+}
+h2, article {
+    margin: 0px;
+}
+iframe {
+    display: flex;
+    height: auto;
+    justify-content: flex-end;
+}
+.employees{
+    display: flex;
+    border-radius: 10px;
+}
+fieldset {
+  display: grid;
+  grid-gap: .5rem;
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 0.2);
+  padding: 1rem;
+}
+label, input, button, textarea {
+  font-family: Roboto, Arial, sans-serif;
+}
+label {
+  text-align: left;
+  padding-right: 1rem;
+}
+input, textarea {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+}
+.purpose label{
+    text-align: left;
+    align-items: right;
+    
+}
+.socialmedia {
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: end;
+    padding: 2rem;
+    border: var(--accent-color2);
+
+
+}
+.newsletter label {
+    align-items: end;
+}
+button {
+  margin:1rem;
+  background-color: rgb(4, 44, 4);
+  color: #fff;
+  border: none;
+  border-radius: .5rem;
+  padding: .75rem;
+  font-size: 1.2rem;
+
+
+}
+form, main, h2, article{
+    background-color: gray;
+}
+
+footer{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    background-color: var(--accent-color2);
+    color: #fff;
+}

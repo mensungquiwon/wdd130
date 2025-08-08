@@ -7,17 +7,25 @@
 --body-font: "Marmelad", sans-serif;
 }
 
-.header {
+header {
     display: grid;
-    grid-template-columns: auto 1fr ;
+    grid-template-columns: 150px auto;
     align-items: center;
     border: 1px solid lightyellow;
     background-color: var(--primary-color); /*forest green8*/
     color: var(--accent-color2);
-    padding: 1rem 2rem; 
 }
-.logo img{
-    height: 60px;
+header, nav a {
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 7px;
+    border-radius: 5px;
+
+}
+.history {
+    display: flex;
+    text-align: justify;
 }
 
 *{ 
@@ -27,12 +35,11 @@
 
  } 
 
- nav ul {
+ nav {
     display: flex;
-    justify-content: flex-end;
-    gap: 2rem;
+    justify-content: space-around;
     text-decoration: none;
-    padding: 20px;
+    align-items: center;
  }
 
 body {
@@ -50,29 +57,33 @@ h1, h2 {
     color: var(--primary-color);
 
 }
-section{
-    display: flex;
+h2{
+    text-align: center;
+    padding: 10px;
     
 }
+
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
 }
 
 .socialmedia a {
+    display: flex;
+    justify-content: flex-end;
+    margin: 4px;
     text-decoration: none;
+
 }
 
 .hero {
-    display: grid;
-    justify-content: center;
-    width: 100%;
+    position: relative;
+    ;
 }
 .hero img {
-    display: grid;
+    display: block;
     width: 100%;
     height: auto;
-
 }
 h1 {
     position: absolute;
@@ -85,10 +96,20 @@ h1 {
     color: #fff
 
 }
+.gallery-row {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    margin: 5px;
+    
+
+    
+}
 
 .hero article {
-    position: absolute;
-    width: 100%; 
+    position: absolute; 
+    display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     box-sizing: border-box;  
     background-color: var(--accent-color2);
@@ -99,4 +120,16 @@ h1 {
 .hero article img {
     float: right;
     width: 125px;
+}
+footer{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    background-color: var(--accent-color2);
+    color: #fff;
+}
+
+.history-text {
+    text-align: justify;
+    padding: 1rem;
 }
