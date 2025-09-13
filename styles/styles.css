@@ -24,7 +24,7 @@ p {
    padding: 10px;
 }
 main {
-    width: 840px;
+    max-width: 840px;
 }
 
 aside {
