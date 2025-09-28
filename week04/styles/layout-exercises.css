@@ -34,7 +34,9 @@ div {
 }
 
 .container2 {
-    /* write declarations here */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
 }
 
@@ -44,12 +46,13 @@ div {
 }
 
 .container3 {
-    /* write declarations here */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 
 }
 
 .columns-3 {
-    /* write declaration here */
+    grid-column: 1/4;   
 
 }
 

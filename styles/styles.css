@@ -10,22 +10,29 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    ali
 }
 
 
 nav {
-    background-color: var(--bg-color);
+    background-color:  var(--bg-color);
     padding: 16px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
+
 nav a {
     color: white;
     display: block;
     padding: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
 }
 
 h1 {
     color: #00008b;
+    border-bottom: 1px solid black;
 }
 
 img {
@@ -39,9 +46,6 @@ img {
 
 p {
    padding: 10px;
-}
-main {
-    max-width: 840px;
 }
 
 aside {
@@ -87,4 +91,25 @@ aside h2 {
     top: 47px;
     left: 100px;
 }
+/* Css flex and grid enhancement exercise. 09/28/2025 */
 
+footer, .grid, header {
+    max-width: 840px;
+    margin: 0 auto;
+}
+.grid {
+    display: grid;
+    align-items: center;
+}
+main {
+    grid-column: 1 / 2;
+    margin: 1rem;   
+}
+aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 3 / 4;
+    grid-row: 1/2
+
+}
+    
