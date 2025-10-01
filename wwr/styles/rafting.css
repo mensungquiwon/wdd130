@@ -2,7 +2,7 @@
     --primary-color: #0a0724;
     --secondary-color: #062405;
     --accent-color: #635d3a;
-    --accent-color-2: #060803;
+    --accent-color-2: rgb(226, 216, 216);
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -19,13 +19,12 @@ header {
 }
 body {
     font-family: var(--body-font);
-    color: var(--accent-color-2);
+    color: #000;
 }
 
-header, main, footer {
+header, main, footer, figure {
     width: 840px;
     margin: 0 auto;
-
 }
 h1, h2 {
     font-family: var(--heading-font);
@@ -61,16 +60,110 @@ h1 {
 
 article {
     position: absolute;
-    bottom: 5px;
+    top: 90px;
     width: 100%;
     background-color: var(--accent-color);
-    opacity:
+    margin: 0 auto;
+    text-align: start;
+    opacity: 0.8;
+    
 }
 .hero article img {
     float: right;
     width: 125px;
 }
 
-    
+header {
+    display: grid;
+    grid-template-columns: 120px 1fr 1fr;
+    align-items: center;
+    justify-content: y  b;
+}
+header img {
+    width: 100px;
+    border: 2px solid #fff;
+    border-radius: 10px;
 
+}
+.navigation {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+li {
+    flex: 2 2 auto;
+    justify-content: space-around;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #000;
+    margin: 10px;
+    border: 1px solid gray
+
+}
+.history {
+    display: flex;
+}
+.history p {
+    align-items: flex-start;
+    padding: 2px;
+    margin: 0 auto;
+}
+    
+.history img {
+    justify-content: center;
+    width: 200px;
+    height: 0 auto;
+    padding: 8px;
+    margin: 0 auto;
+}
+.advent {
+    border: 2px solid #0000;
+    border-radius: 4px;
+} 
+.box {
+    border: 1px solid #0000;
+    border-radius: 4px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+}
+
+figure img {
+    width: 150px;
+    height: auto;
+    padding: 8px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+
+}
+figcaption {
+    font-style: italic;
+    font-size: 0.8rem;
+    text-align: center;
+    
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: #060803 solid 1px;
+
+}
+
+footer p {
+    text-align: center;
+    font-size: 1rem;
+}
+.socialmedia {
+    justify-content: flex-end;
+    align-items: end;
+    padding: 8px;
+}
 
