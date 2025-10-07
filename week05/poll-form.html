@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jonathan Mensung Quiwon">
+    <link rel="stylesheet" href="styles/poll-form.css">
+    <title>poll form exercise</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>WDD130 | poll form</h1>
+        </header>
+        <form>
+            <fieldset>
+                <legend> Contact Information</legend>
+                <div class="form-item column2">
+                    <label for="fullname">Full name</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+                <div class="form-item column2">
+                    <label for="useremail"> User email</label>
+                    <input type="text" id="useremail" name="useremail">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend> Questions</legend>
+                <div class="form-item column1">
+                    <label for="browser">What is your favorite browser?</label>
+                    <select id="browser" name="browser">
+                        <option value="chrome">Chrome</option>
+                        <option value="firefox">Firefox</option>
+                        <option value="safari">Safari</option>
+                        <option value="edge">Edge</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-item column1">
+                    <label for=" pet">Do you have a household pet?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
+                <label for="feedback">List the places you have lived.</label>
+                <textarea id="feedback" name="feedback" rows="4" placeholder="stillwater"></textarea>
+            </fieldset>
+            <button type="submit">Submit poll</button>
+        </form>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
