@@ -241,3 +241,7 @@ aside {
     font-weight: bold;
     
 }
+
+.contact-flex iframe {
+    border: 0;
+}
