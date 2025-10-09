@@ -77,7 +77,6 @@ header {
     display: grid;
     grid-template-columns: 120px 1fr 1fr;
     align-items: center;
-    justify-content: y  b;
 }
 header img {
     width: 100px;
@@ -225,7 +224,6 @@ button:hover {
 aside {
     width: 20rem;
     position: relative;
-    text-align: cdnet;
 }
 .contact-flex {
     display: flex;
