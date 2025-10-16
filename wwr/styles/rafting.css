@@ -280,7 +280,7 @@ aside {
         width: 300px;
         height: auto;
     }
-    .cta-button {
+     .cta-button {
         display: flex;
         justify-content: flex-end;
         padding: 10px 20px;
@@ -292,7 +292,6 @@ aside {
         text-align: right;
         margin: 20px auto;
         border: none;
-        cursor: pointer;
     }
     a .cta-button {
         text-decoration: none;
